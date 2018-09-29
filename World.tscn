@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Lazarus.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node" index="0"]
+
+[node name="Planet" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 521.123, 656.898 )
+
+[node name="Lazarus" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 504.886, 316.972 )
+
+[node name="Enemies" type="Node" parent="." index="2"]
+
+[connection signal="move_planet" from="Lazarus" to="Planet" method="_on_Lazarus_move_planet"]
+
+
