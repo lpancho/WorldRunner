@@ -1,9 +1,10 @@
 extends KinematicBody2D
 
 
-const SPEED = 150
+const SPEED = 300
+const MOVE_WORLD = 0.002
 var move_direction = Vector2()
-
+var move_jump = false
 var motion = Vector2()
 
 var is_jumping = false
@@ -22,12 +23,13 @@ func control_loop():
 	
 	var LEFT = Input.is_action_pressed("ui_left")
 	var RIGHT = Input.is_action_pressed("ui_right")
+	move_jump = Input.is_action_pressed("ui_select")
 	
 	move_direction.x = -int(LEFT) + int(RIGHT)
 	pass
 
 func movement_loop():
-	emit_signal("move_planet", move_direction.x)
+	emit_signal("move_planet", MOVE_WORLD * move_direction.x, SPEED)
 	pass
 
 func animation_loop():

@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Asteroid.gd" type="Script" id=1]
+[ext_resource path="res://assets/MIsc/Asteriod.png" type="Texture" id=2]
+[ext_resource path="res://Explosion.tscn" type="PackedScene" id=3]
+
+[node name="Asteroid" type="Area2D" index="0"]
+
+position = Vector2( 518.033, 240.84 )
+input_pickable = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = -1.0
+angular_damp = -1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+min_speed = 1
+max_speed = 5
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+
+build_mode = 0
+polygon = PoolVector2Array( 18.1125, 36.7761, 18.6477, 35.8407, 20.2751, 35.8683, 25.0747, 30.986, 25.4744, 28.7757, 28.3214, 26.4673, 28.4753, 25.0823, 30.6298, 23.4665, 30.5528, 22.0045, 31.4762, 21.5429, 31.4762, 19.0806, 32.5534, 18.7729, 32.3995, 16.6184, 33.3998, 16.3106, 33.6306, 14.3101, 37.5548, 7.84668, 38.229, 5.89801, 38.8903, 4.57546, 39.2681, -4.30455, 38.4179, -4.87136, 38.229, -8.83902, 37.7567, -10.9173, 36.5286, -11.3897, 33.6001, -15.5463, 31.4273, -19.325, 27.4596, -25.371, 27.4596, -26.8824, 19.3354, -35.1012, 17.6349, -35.668, 13.9507, -36.4237, 2.23663, -36.8016, -5.13189, -36.0459, -10.0442, -34.8178, -14.2953, -33.9676, -14.8621, -33.1173, -17.5072, -33.1173, -20.9081, -29.7165, -21.0025, -28.6773, -31.8664, -17.5301, -33.4479, -15.0739, -36.1874, -7.7054, -39.3049, -3.73774, -39.3049, 0.513325, -38.3602, 2.40269, -36.6255, 5.52506, -34.556, 11.7336, -32.6803, 13.7797, -32.1688, 17.5311, -30.8899, 19.6625, -30.1226, 22.2202, -28.4174, 22.7318, -27.9059, 24.0106, -27.4796, 25.6305, -25.3482, 26.8241, -25.6039, 28.1883, -24.3251, 28.6998, -24.3251, 29.7229, -24.3251, 30.6607, -19.8917, 35.1794, -18.1013, 34.4121, -18.016, 34.9236, -14.9467, 35.5204, -14.5205, 36.8845 )
+
+[node name="Explosion" parent="." index="2" instance=ExtResource( 3 )]
+
+[node name="Visible" type="VisibilityNotifier2D" parent="." index="3"]
+
+scale = Vector2( 3, 3 )
+rect = Rect2( -10, -10, 20, 20 )
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="screen_exited" from="Visible" to="." method="_on_Visible_screen_exited"]
+
+
