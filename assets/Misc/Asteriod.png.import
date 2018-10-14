@@ -7,10 +7,7 @@ path="res://.import/Asteriod.png-80824366cfc96179a20ed17f22bde084.stex"
 [deps]
 
 source_file="res://assets/Misc/Asteriod.png"
-source_md5="70237556f16614485c91aa242a2f0051"
-
 dest_files=[ "res://.import/Asteriod.png-80824366cfc96179a20ed17f22bde084.stex" ]
-dest_md5="8bbba2cfbb0ff1783b116bd800304504"
 
 [params]
 

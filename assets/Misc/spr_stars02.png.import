@@ -7,10 +7,7 @@ path="res://.import/spr_stars02.png-0033c0aeba32b51c069b553a602a3d16.stex"
 [deps]
 
 source_file="res://assets/Misc/spr_stars02.png"
-source_md5="abd1fc2cf1c590241e3e2b9d0cdb7556"
-
 dest_files=[ "res://.import/spr_stars02.png-0033c0aeba32b51c069b553a602a3d16.stex" ]
-dest_md5="bdfee31593107ecf33be066fe6a66553"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/tile000.png-acf83cc1607e3ec4c6a140fbd96a426d.stex"
 [deps]
 
 source_file="res://assets/Misc/Explosions/explosion1/tile000.png"
-source_md5="3b6587e0fc006b770a30d794813c807f"
-
 dest_files=[ "res://.import/tile000.png-acf83cc1607e3ec4c6a140fbd96a426d.stex" ]
-dest_md5="417a0ad855601997e3802b2f4728fd9f"
 
 [params]
 

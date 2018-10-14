@@ -7,10 +7,7 @@ path="res://.import/004.png-4594bc11875ddaae598a2904486af644.stex"
 [deps]
 
 source_file="res://assets/Lazarus/Fire/004.png"
-source_md5="06065bcbe0b37ece9585e636eedfa1f5"
-
 dest_files=[ "res://.import/004.png-4594bc11875ddaae598a2904486af644.stex" ]
-dest_md5="203baf1b1b2007f7e2a58cdeb5f7b541"
 
 [params]
 

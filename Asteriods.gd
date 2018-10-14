@@ -15,6 +15,8 @@ func _ready():
 #	pass
 
 func _on_Lazarus_move_planet(x_movement, speed):
-	self.position.x += x_movement * speed
-	print(position)
+	self.position.x += x_movement * speed * -1
+	
+	# This will identify the lenght of the planet.
+#	print(position)
 	pass # replace with function body

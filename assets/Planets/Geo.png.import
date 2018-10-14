@@ -7,10 +7,7 @@ path="res://.import/Geo.png-f7f2aaece9d4cfb7434f4af58f0784ae.stex"
 [deps]
 
 source_file="res://assets/Planets/Geo.png"
-source_md5="b2effaa7fac873eb0dbfcac590bd0208"
-
 dest_files=[ "res://.import/Geo.png-f7f2aaece9d4cfb7434f4af58f0784ae.stex" ]
-dest_md5="95cf146fb92cf939d5fd6a15ad2b0ddf"
 
 [params]
 

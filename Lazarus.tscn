@@ -10,22 +10,21 @@
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "stand",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "walk",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "stand",
+"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 14.469
-height = 20.0
+extents = Vector2( 13.6312, 24.6618 )
 
 [node name="Lazarus" type="KinematicBody2D"]
 
@@ -47,7 +46,8 @@ playing = true
 
 [node name="collision" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 4, 4 )
+position = Vector2( 4, 1.9503 )
+scale = Vector2( 1, 0.925901 )
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]
 

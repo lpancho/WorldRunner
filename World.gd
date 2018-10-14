@@ -13,9 +13,9 @@ func _process(delta):
 	pass
 
 func _on_AsteriodTimer_timeout():
-	print("spawn")
-	var aster = Asteriod.instance()
-	$Asteriods.add_child(aster)
-	aster.position = Vector2(rand_range(0, 800), 0)
-	aster.speed = rand_range(aster.min_speed, aster.max_speed)
+#	print("spawn")
+#	var aster = Asteriod.instance()
+#	$Asteriods.add_child(aster)
+#	aster.position = Vector2(rand_range(0, 800), 0)
+#	aster.speed = rand_range(aster.min_speed, aster.max_speed)
 	pass # replace with function body
